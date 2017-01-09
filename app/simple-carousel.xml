@@ -1,0 +1,22 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" xmlns:ns="nativescript-carousel">
+<Page.actionBar>
+	<ActionBar title="Simple"></ActionBar>
+</Page.actionBar>
+
+<ScrollView>
+    <StackLayout>
+        <GridLayout height="350">
+            <ns:Carousel id="myCarousel" height="350" color="white" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" android:indicatorAnimation="slide"
+                items="{{ myDataArray }}" indicatorColor="#fff">
+                <ns:Carousel.itemTemplate>
+                    <ns:CarouselItem  verticalAlignment="center" backgroundColor="{{ color }}" height="350">
+                        <GridLayout rows="*" columns="*">
+                            <Image src="{{ image }}" width="100%" col="1" stretch="aspectFill" />
+                        </GridLayout>
+                    </ns:CarouselItem>
+                </ns:Carousel.itemTemplate>
+            </ns:Carousel>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>
+</Page>
