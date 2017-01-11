@@ -1,0 +1,21 @@
+ActionBar {
+    /*background-color: rgba(255, 0, 0, 0.3);*/
+    /*opacity: 0.2;*/
+
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fakeActionBar {
+    padding: 0 10;
+}
+
+.fakeActionBar Label {
+    text-align: center;
+}
+
+.fakeActionBar Button {
+    font-size: 20;
+}
