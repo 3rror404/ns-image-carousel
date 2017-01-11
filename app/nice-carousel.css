@@ -1,7 +1,9 @@
-ActionBar {
-    /*background-color: rgba(255, 0, 0, 0.3);*/
-    /*opacity: 0.2;*/
+Page {
+    background-color: red;
+}
 
+.action-bar {
+    background-color: rgba(255, 0, 0, 0.3);
 }
 
 .hidden {

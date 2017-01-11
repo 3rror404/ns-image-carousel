@@ -5,9 +5,10 @@
     </ActionBar>
 </Page.actionBar>
 
-<ScrollView>
-    <StackLayout>
-        <GridLayout height="auto">
+<ScrollView id="scrollView" style="margin-top: -64">
+    <StackLayout>      
+
+        <GridLayout height="auto" class="carousel-wrap">
             <ns:Carousel id="myCarousel" height="350" color="white" finite="true" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" android:indicatorAnimation="slide"
                 items="{{ myDataArray }}" indicatorColor="#fff">
                 <ns:Carousel.itemTemplate>
@@ -17,6 +18,11 @@
                 </ns:Carousel.itemTemplate>
             </ns:Carousel>
         </GridLayout>
+
+        <StackLayout>
+            <Label text="Product Title" class="h3" />
+            <Label text="£12.99" class="h2 font-weight-bold"/>
+        </StackLayout>
 
         <StackLayout style="height: 800">
             <Label textWrap="true" text="test" />
